@@ -15,7 +15,7 @@ class LocationsController < ApplicationController
   def update
     @location = Location.find(params[:id])
     if @location.update(location_params)
-      redirect_to @location
+      redirect_to location_path
     else
       redirect_back_or_to @location
     end

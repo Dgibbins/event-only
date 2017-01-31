@@ -1,0 +1,9 @@
+
+<!-- Partial View: denoted by '_' Note: location is a local variable, not an instance -->
+<!-- We give a local so it renders whatever we give it. -->
+<!-- This is a cookie  cutter of code -->
+<div class="location">
+  <h3>City: <%= location.city %></h3>
+  <%= location.description %><br />
+  <%= link_to image_tag(location.image, class: "location"), location %>
+</div>
