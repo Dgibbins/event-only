@@ -1,5 +1,4 @@
-<h1>Create an Event!!!!</h1>
-<%= form_for [@location, @event] do |f| %>
+<%= form_for events do |f| %>
 
   <p>
     <%= f.label :name %>
@@ -13,6 +12,7 @@
     <%= f.label :capacity %>
     <%= f.text_field :capacity %>
   </p>
+
   <p>
     <%= f.submit "Save!" %>
   </p>
